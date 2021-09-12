@@ -1,3 +1,64 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
 body {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Хедер */
+/* Лого */
+.logo {
+  color: #000000;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo .logocolor {
+  color: var(--accent-color);
+}
+
+/* Навигация */
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Контакты */
+.site-nav .link-contact {
+  color: var(--secondary-text-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link-contact:hover,
+.site-nav .link-contact:focus {
+  color: var(--accent-color);
 }
