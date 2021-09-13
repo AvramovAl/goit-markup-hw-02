@@ -2,6 +2,8 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --h1-color: #ffffff;
+  --footer-color: #2f303a;
 }
 
 body {
@@ -14,10 +16,14 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* Хедер */
 /* Лого */
 .logo {
-  color: #000000;
+  color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -26,7 +32,7 @@ body {
 }
 
 .logo .logocolor {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
 }
 
 /* Навигация */
@@ -35,7 +41,7 @@ body {
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.9;
   letter-spacing: 0.02em;
 }
 
@@ -54,11 +60,38 @@ body {
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.9;
   letter-spacing: 0.02em;
 }
 
 .site-nav .link-contact:hover,
 .site-nav .link-contact:focus {
   color: var(--accent-color);
+}
+
+/* Main */
+
+.promo {
+  background-color: var(--footer-color);
+}
+
+.h1 {
+  color: var(--h1-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 0.73;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: var(--h1-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.53;
+  letter-spacing: 0.06em;
 }
