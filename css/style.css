@@ -4,6 +4,8 @@
   --accent-color: #2196f3;
   --h1-color: #ffffff;
   --footer-color: #2f303a;
+  --footer-address: rgba(255, 255, 255, 0.6);
+  --background-filter: #f5f4fa;
 }
 
 body {
@@ -31,17 +33,19 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo .logocolor {
+.logo .logoblack {
   color: var(--primary-text-color);
 }
 
+.logo .logo-white {
+  color: var(--h1-color);
+}
 /* Навигация */
 .site-nav .link {
   color: var(--primary-text-color);
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
-  line-height: 0.9;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -57,10 +61,9 @@ body {
 /* Контакты */
 .site-nav .link-contact {
   color: var(--secondary-text-color);
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
-  line-height: 0.9;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -79,19 +82,122 @@ body {
   color: var(--h1-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 0.73;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.btn {
+.btn-hero {
   background-color: var(--accent-color);
   color: var(--h1-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 0.53;
+  line-height: 1.9;
   letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-filter {
+  /* background-color: var(--background-filter);
+  width: 103px;
+  height: 38px;
+  left: 865px;
+  top: 174px;
+  border-radius: 4px; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Особенности */
+
+.features-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-p {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Чем занимаемся */
+
+.title-section {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Команда */
+
+.title-team {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-p {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Футтер */
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+.address-contact {
+  color: var(--footer-address);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-contact:hover .address-contact:focus {
+  color: var(--h1-color);
+}
+
+/* Плитки второй страницы */
+
+.heading-card {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.description-card {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
